@@ -27,11 +27,12 @@ function App() {
         </div>
       </div>
       <p className='text-slate-100 text-2xl lg:pl-36 sm:pl-12 lg:w-1/2 sm:w-11/12'>
-            I'm a junior studying Computer Science and Mathematics at the University of Maryland-College Park. Blah Blah Blah Blah Blah Blah 
-            Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah 
+      I'm a motivated and dynamic college student studying Computer Science and Math at the University of Maryland, College Park. 
+      With a strong interest in AI/ML, data science, and web development, I'm seeking valuable experience to gain practical knowledge and insights to build 
+      skills for future endeavors. 
           </p>
       
-      <div className='flex flex-row'>
+      <div className='flex flex-row pb-20'>
         <div className='bottom-0 h-1/2 w-screen lg:px-16 sm:px-5'>
         <div className="flex justify-center items-center py-10">
           <div className="text-center flex flex-row">
@@ -55,7 +56,7 @@ function App() {
                 [__Vector Stores__](https://python.langchain.com/docs/modules/data_connection/vectorstores/), and [__FAISS__](https://engineering.fb.com/2017/03/29/data-infrastructure/faiss-a-library-for-efficient-similarity-search/) 
                 to leverage large amounts of data to give the Agent only the relevant sections. The frontend 
                 was made with [__Streamlit__]() Community Cloud. Developed 100% by yours truly."
-              src="public\static\images\ss_3.png"
+              src="static/images/ss_3.png"
               link="https://testudoai.streamlit.app/"
               ghLink="https://github.com/kierankhan/TestudoAI"
               tech="LangChain, Python, OpenAI, LangSmith, Streamlit, Matplotlib, FAISS, Embeddings, Vector Stores, REST APIs"
@@ -71,7 +72,7 @@ function App() {
               the frontend. We made custom liquid animations and a digital [__mask__](https://elovatestudios.com/digital-art-layers-and-masking/) was 
               used to overlay the teacup with the liquid. We used [__Bulma__](https://bulma.io/documentation/) to help with styling some of the 
               components. This was built with a team of four and was a winning project at the [__Bitcamp 2023 Hackathon__](https://bit.camp/)."
-              src="public\static\images\sb_1.png"
+              src="static/images/sb_1.png"
               link="https://studybrew.netlify.app/"
               ghLink="https://github.com/ericx1e/StudyBrew"
               tech="React, Javascript, Firebase Bulma, HTML/CSS"
@@ -81,7 +82,7 @@ function App() {
               title="Poker Equity Calculator API🃏"
               desc="This is an API that calculates the equity of two poker hands given the option of community cards. 'Equity' in poker is defined as
                your current chance of winning the hand as a share of the pot."
-              src="public\static\images\p_ss.png"
+              src="static/images/p_ss.png"
               desc2="Over the last year I've gotten into poker, and one of the most important things to learn early on is the concept of equity. 
               Equity determines your strategy, how much you bet, and is something good players are always aware of when they are in a hand. This project 
               was built in Java with the [__Spring Boot__](https://spring.io/projects/spring-restdocs) REST Framework. To calculate equity, I first 
