@@ -11,22 +11,22 @@ function App() {
   return (
     <div className={`min-h-screen min-w-screen bg-gradient-to-br from-slate-900 to-indigo-500 flex flex-col w-screen `}>
       <div className='flex justify-between'>
-        <div className='lg:basis-2/3 sm:basis-5/6 lg:pl-36 sm:pl-12 pt-16 lg:w-1/2 sm:w-3/4'>
+        <div className='lg:basis-2/3 sm:basis-5/6 lg:pl-36 sm:pl-8 pt-16 lg:w-1/2 sm:w-3/4'>
           <h1 className="font-semibold text-transparent lg:text-8xl sm:text-6xl bg-clip-text bg-gradient-to-r from-rose-500 to-yellow-300 py-10">
           Kieran Khan_
           </h1>
           {/* <img className='photo' src="../public/grad1.jpg" ></img> */}
         </div>
-        <div class="basis-1/4 flex justify-end right-0 h-1/6 p-10">
-          <a href="https://github.com/kierankhan" className='px-3' target="_blank" rel="noopener noreferrer">
+        <div class="lg:basis-1/4 sm:basis-1/6 flex justify-end right-0 h-1/6 lg:p-10 sm:p-0 sm:pt-3">
+          <a href="https://github.com/kierankhan" className='pr-3' target="_blank" rel="noopener noreferrer">
             <i className="fa-brands fa-github fa-4x" style={{color: "#f1f5f9", size: "500px"}}aria-hidden="true"></i>
           </a>
-          <a href="https://www.linkedin.com/in/kieran-khan-8b6b381a2/" className='px-3' target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/kieran-khan-8b6b381a2/" className='pl-3' target="_blank" rel="noopener noreferrer">
             <i className="fa-brands fa-linkedin fa-4x" style={{color: "#f1f5f9", size: "500px"}}aria-hidden="true"></i>
           </a>
         </div>
       </div>
-      <p className='text-slate-100 text-2xl lg:pl-36 sm:pl-12 lg:w-1/2 sm:w-11/12'>
+      <p className='text-slate-100 text-2xl lg:pl-36 sm:pl-8 lg:w-1/2 sm:w-11/12'>
       I'm a motivated and dynamic college student studying Computer Science and Math at the University of Maryland, College Park. 
       With a strong interest in AI/ML, data science, and web development, I'm seeking valuable experience to gain practical knowledge and insights to build 
       skills for future endeavors. 
