@@ -19,7 +19,7 @@ function App() {
             <i className="fa-brands fa-linkedin fa-4x" style={{color: "#f1f5f9", size: "500px"}}aria-hidden="true"></i>
           </a>
         </div>
-        <div className='lg:basis-2/3 sm:basis-5/6 lg:pl-36 sm:pl-8 lg:w-1/2 sm:w-11/12'>
+        <div className='lg:basis-2/3 sm:basis-5/6 lg:pl-36 sm:pl-8 lg:w-3/4 sm:w-11/12'>
           <h1 className="flex font-semibold text-transparent lg:text-8xl sm:text-5xl bg-clip-text bg-gradient-to-r from-rose-500 to-yellow-300 py-10 animate-slidein">
           Kieran Khan <h1 className="font-semibold text-white lg:text-8xl sm:text-5xl animate-blink">_</h1>
           </h1>
