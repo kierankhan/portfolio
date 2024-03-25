@@ -41,6 +41,23 @@ const Projects = () => {
               learnMore=""
             />
             <Card 
+              title="Ctrl-Phi φ" 
+              desc="Ctrl + F is one of the most prominent keybinds for efficient learning, however, Ctrl + F necessitates specific text input in 
+              order to search. What if you don't remember the exact content of a section? Or what if you have a question about the text you want 
+              answered? We wanted a better way to search for content so we set out to create it."
+              desc2="Ctrl-Phi has three parts: the website, the chrome extension, and the LLM agent. The frontend was built with Nextjs and TailwindCSS, 
+              using select MaterialUI components. The Playground tab allows users to experiment with Ctrl-Phi using sets of example text, or any 
+              text of their own. It uses dynamic highlighting and scrolling within the text boxes and displays components using the FastAPI response. 
+              In order to analyze text, we engineered a custom Search Agent. This agent uses an LLM alongside agentic AI logic and prompting patterns 
+              (based on the principles of ReAct) in order to find direct matching text based on a 
+              user's query. Built for the [__HooHacks__](https://hoohacks-2024.devpost.com/) 2024 Hackathon"
+              src="static/images/ctrlphi.png"
+              link="https://ctrl-phi.app/"
+              ghLink="https://github.com/tayydev/ctrl-phi"
+              tech="Nextjs, FastAPI, TailwindCSS, Poetry, Pydantic, Caddy, Typescript, Javascript, Python"
+              learnMore="https://devpost.com/software/ctrl-phi"
+            />
+            <Card 
               title="StudyBrew☕" 
               desc="StudyBrew is a [__pomodoro__](https://www.forbes.com/sites/bryancollinseurope/2020/03/03/the-pomodoro-technique/?sh=294512cd3985) 
               timer that replaces the traditional countdown with a visualization of tea gradually pouring."
@@ -49,7 +66,7 @@ const Projects = () => {
               [__Firebase__](https://firebase.google.com/docs) for the backend and Google authentication, and [__React__](https://react.dev/) for 
               the frontend. We made custom liquid animations and a digital [__mask__](https://elovatestudios.com/digital-art-layers-and-masking/) was 
               used to overlay the teacup with the liquid. We used [__Bulma__](https://bulma.io/documentation/) to help with styling some of the 
-              components. This was built with a team of four and was a winning project at the [__Bitcamp 2023 Hackathon__](https://bit.camp/)."
+              components. This was built with a team of four and was a winning project at the [__Bitcamp 2023 Hackathon__](https://bitcamp2023.devpost.com/)."
               src="static/images/sb_1.png"
               link="https://studybrew.netlify.app/"
               ghLink="https://github.com/ericx1e/StudyBrew"

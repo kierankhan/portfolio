@@ -20,7 +20,7 @@ export default {
       },
       animation: {
         blink: 'blink 1s steps(1, start) infinite',
-        slidein: "slidein 1s ease",
+        slidein: "slidein 1.5s ease",
         slidein300: "slidein 1s ease 300ms",
         slidein500: "slidein 1s ease 500ms",
         slidein700: "slidein 1s ease 700ms",

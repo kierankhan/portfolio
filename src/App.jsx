@@ -26,13 +26,14 @@ function App() {
           {/* <img className='photo' src="../public/grad1.jpg" ></img> */}
         </div>
       </div>
-      <p className='text-slate-100 text-2xl lg:pl-36 sm:pl-8 lg:w-2/3 sm:w-11/12 animate-slidein'>
-      Hi I'm Kieran, a student at the University of Maryland studying CS and Statistics. I have a strong interest in LLMs,
-       data science/ML, and web development. I'm seeking experience in SWE and Data Science roles to build skills for future endeavors. 
-       Aside from school/career, I enjoy playing violin, travelling, eating good food, and listening to jazz. Feel free to get in touch! Always 
-       looking to meet new people whether school/career/other related!
-      
-          </p>
+      <div className='lg:pl-36 sm:pl-8'>
+        <p className='text-slate-100 lg:text-2xl sm:text-xl lg:w-2/3 sm:w-11/12 animate-slidein'>
+          Hi I'm Kieran, a student at the University of Maryland studying CS and Statistics. I have a strong interest in LLMs,
+          data science/ML, and web development. I'm seeking experience in SWE and Data Science roles to build skills for future endeavors. 
+          Aside from school/career, I enjoy playing violin, travelling, eating good food, and listening to jazz. Feel free to get in touch!
+        </p>
+      </div>
+
       
       <div className='flex flex-row pb-20'>
         <div className='bottom-0 h-1/2 w-screen'>
