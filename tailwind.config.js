@@ -17,6 +17,11 @@ export default {
             transform: "translateY(0)",
           },
         },
+        shiftbg: {
+          '0%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+          '100%': { backgroundPosition: '0% 50%' },
+        },
       },
       animation: {
         blink: 'blink 1s steps(1, start) infinite',
@@ -24,6 +29,7 @@ export default {
         slidein300: "slidein 1s ease 300ms",
         slidein500: "slidein 1s ease 500ms",
         slidein700: "slidein 1s ease 700ms",
+        shiftbbg: "shiftbg 10s ease infinite"
       },
     },
     screens: {

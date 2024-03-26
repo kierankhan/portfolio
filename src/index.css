@@ -6,3 +6,32 @@
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
   }
+
+/* @layer utilities {
+  .bg-size-200 {
+    background-size: 200% 200%;
+  }
+} */
+
+@keyframes shiftbg {
+  0% {
+    background-position: 0% 0%;
+    background-size: 200% 200%;
+  }
+  25% {
+    background-position: 50% 100%;
+    background-size: 200% 200%;
+  }
+  50% {
+    background-position: 100% 50%;
+    background-size: 200% 200%;
+  }
+  100% {
+    background-position: 0% 0%;
+    background-size: 200% 200%;
+  }
+}
+
+.animate-shiftbg {
+  animation: shiftbg 8s ease infinite;
+}
