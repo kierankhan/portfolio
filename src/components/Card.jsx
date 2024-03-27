@@ -11,7 +11,7 @@ function Card(props) {
       <div className="flex justify-between">
         <h5 class="w-3/4 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{props.title}</h5>
         <a href={props.ghLink} className='px-3 justify-end' target="_blank" rel="noopener noreferrer">
-          <i className="fa-brands fa-github fa-2x text-slate-950 dark:bg-slate-100" style={{ size: "500px"}}aria-hidden="true"></i>
+          <i className="fa-brands fa-github fa-2x text-slate-950 dark:text-slate-100" style={{ size: "500px"}}aria-hidden="true"></i>
         </a>
       </div>
       

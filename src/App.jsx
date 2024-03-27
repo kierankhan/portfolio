@@ -13,7 +13,7 @@ function App() {
     <div className={`min-h-screen min-w-full bg-gradient-to-br from-slate-800 to-black flex flex-col animate-shiftbg`} style={{backgroundSize: '200%'}}>
       <div className='flex flex-col'>
         <div class="lg:basis-1/4 sm:basis-1/6 flex justify-end right-0 h-1/6 lg:pt-10 lg:pr-10 sm:pr-5 sm:pt-3 animate-slidein">
-          <a href="https://github.com/kierankhan" className='pr-3 bg-transparent' target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/kierankhan" className='pr-3' target="_blank" rel="noopener noreferrer">
             <i className="fa-brands fa-github fa-4x" style={{color: "#f1f5f9", size: "500px"}}aria-hidden="true"></i>
           </a>
           <a href="https://www.linkedin.com/in/kieran-khan-8b6b381a2/" className='pl-3' target="_blank" rel="noopener noreferrer">
