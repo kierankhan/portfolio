@@ -29,7 +29,7 @@ export default {
         slidein300: "slidein 1s ease 300ms",
         slidein500: "slidein 1s ease 500ms",
         slidein700: "slidein 1s ease 700ms",
-        shiftbbg: "shiftbg 10s ease infinite"
+        shiftbbg: "shiftbg 20s ease infinite"
       },
     },
     screens: {
