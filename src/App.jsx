@@ -10,7 +10,7 @@ import Resume from './components/Resume'
 function App() {
   const [tab, setTab] = useState("projects")
   return (
-    <div className={`min-h-screen min-w-full bg-gradient-to-br from-slate-800 to-black flex flex-col animate-shiftbg`} style={{backgroundSize: '200%'}}>
+    <div className={`min-h-screen min-w-full bg-gradient-to-br from-slate-800 to-black flex flex-col`} style={{backgroundSize: '100%'}}>
       <div className='flex flex-col'>
         <div class="lg:basis-1/4 sm:basis-1/6 flex justify-end right-0 h-1/6 lg:pt-10 lg:pr-10 sm:pr-5 sm:pt-3 animate-slidein">
           <a href="https://github.com/kierankhan" className='pr-3' target="_blank" rel="noopener noreferrer">
