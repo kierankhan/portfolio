@@ -19,7 +19,9 @@ export default {
         },
         shiftbg: {
           '0%': { backgroundPosition: '0% 50%' },
+          '25%': { backgroundPosition: '50% 0%' },
           '50%': { backgroundPosition: '100% 50%' },
+          '70%': { backgroundPosition: '50% 25%' },
           '100%': { backgroundPosition: '0% 50%' },
         },
       },

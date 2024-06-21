@@ -25,6 +25,21 @@ const Projects = () => {
               learnMore="https://github.com/kierankhan/TestudoAI"
             />
             <Card 
+              title="Cutting Corners" 
+              desc="A telephone-esque multiplayer drawing game where you and 3 friends must work together to convince an AI Image Classifier of your artistic abilities!"
+              desc2="We wanted to create a game that matched the vibe of our favorite co-op multiplayer games, 
+              like [Gartic Phone](https://garticphone.com/) and [Jackbox](https://www.jackboxgames.com/) but 
+              with a technical twist. We utilized [__Google QuickDraw open sourced dataset__](https://github.com/googlecreativelab/quickdraw-dataset)
+              to train an AI Image classifier. To power the classifier, we used pytorch to replicate a cutting-edge CNN architecture for image classification, Alexnet. We trained the network on 25000 data points from 25 different classes, and consistently achieved 80-90% test accuracy.
+              To have the frontend be able to utilize our model, we decided to use FastAPI to build a Restful API that is able to take in base64, a string representation of the user-drawn image, and manipulate it in order to compress it down into a 28x28 grayscale matrix that our model needs as input, hosted by [__Railway__](https://railway.app/). 
+              "
+              src="static/images/cuttingcorners.png"
+              link="https://cuttingcorners-7c95b20a5ad9.herokuapp.com/"
+              ghLink="https://github.com/ericx1e/Cutting-Corners"
+              tech="p5.js, express.js, pytorch, fastapi, pandas, PIL, pydantic, socket.io"
+              learnMore="https://devpost.com/software/cuttingcorners"
+            />
+            <Card 
               title="WillHeSave" 
               desc="A machine learning project to predict whether my friend [__Eric__](https://learnsatmath.com/) will save a song to his Spotify
               library."
