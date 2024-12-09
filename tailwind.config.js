@@ -3,6 +3,9 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    './components/**/*.{js,jsx}',
+    './app/**/*.{js,jsx}',
+    './pages/**/*.{js,jsx}'
   ],
   theme: {
     extend: {
@@ -39,5 +42,7 @@ export default {
       'lg': '1024px'
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography')
+  ],
 }

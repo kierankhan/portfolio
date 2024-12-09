@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import IconGithub from './components/IconGithub'
+import IconGithub from '../components/IconGithub'
 import './App.css'
-import Card from './components/Card'
-import Projects from './components/Projects'
-import Resume from './components/Resume'
+import Card from '../components/Card'
+import Projects from '../components/Projects'
+import Resume from '../components/Resume'
 
 
 function App() {
@@ -29,9 +29,9 @@ function App() {
       </div>
       <div className='lg:pl-36 sm:pl-8'>
         <p className='text-slate-100 lg:text-2xl sm:text-xl lg:w-2/3 sm:w-11/12 animate-slidein'>
-          Hi I'm Kieran, a student at the University of Maryland studying CS and Statistics. I have a strong interest in LLMs,
-          data science/ML, and web development. I'm seeking experience in SWE and Data Science roles to build skills for future endeavors. 
-          Aside from school/career, I enjoy playing violin, travelling, eating good food, and listening to jazz. Feel free to get in touch!
+          Hi I'm Kieran, a student at the University of Maryland studying CS and Statistics. I have a strong interest in  
+          anything data; big data, data engineering, data science, machine learning are all sub-fields that I'd love to explore.
+          Aside from school/career, I enjoy playing violin, traveling, cycling, and collecting records. Feel free to get in touch!
         </p>
       </div>
 
