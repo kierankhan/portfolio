@@ -38,10 +38,10 @@ function App() {
       </div>
       <div className='lg:pl-36 sm:pl-8'>
         <div className='flex flex-wrap items-center mt-2'>
-          <img src="static/images/logos/Microsoft_logo_(2012).png" className='lg:h-12 sm:h-8 px-3 my-2'></img>
-          <img src="static/images/logos/The_Aerospace_Corporation_logo.png" className='lg:h-16 sm:h-8 px-3 mt-2'></img>
-          <img src="static/images/logos/Mitre_Corporation_logo.png" className='lg:h-10 sm:h-8 px-3 my-2'></img>
-          <img src="static/images/logos/U.S._News_&_World_Report_logo.png" className='lg:h-16 sm:h-8 px-3 my-2'></img>
+          <img src="static/images/logos/Microsoft_logo_(2012).png" className='lg:h-12 sm:h-8 px-3 my-2 animate-slidein'></img>
+          <img src="static/images/logos/The_Aerospace_Corporation_logo.png" className='lg:h-16 sm:h-8 px-3 mt-2 animate-slidein'></img>
+          <img src="static/images/logos/Mitre_Corporation_logo.png" className='lg:h-10 sm:h-8 px-3 my-2 animate-slidein'></img>
+          <img src="static/images/logos/U.S._News_&_World_Report_logo.png" className='lg:h-16 sm:h-8 px-3 my-2 animate-slidein'></img>
           
         </div>
       </div>
