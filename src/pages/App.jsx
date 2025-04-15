@@ -5,12 +5,15 @@ import './App.css'
 import Card from '../components/Card'
 import Projects from '../components/Projects'
 import Resume from '../components/Resume'
+import AnimatedGradientBackground from '../components/AnimatedGradientBackground'
+import RotatingGradientBackground from '../components/RotatingGradientBackground'
 
 
 function App() {
   const [tab, setTab] = useState("projects")
   return (
-    <div className={`min-h-screen min-w-full bg-gradient-to-br from-slate-800 to-black flex flex-col`} style={{backgroundSize: '100%'}}>
+    // <div className={`min-h-screen min-w-full bg-gradient-to-br from-slate-800 to-black flex flex-col`} style={{backgroundSize: '100%'}}>
+    <RotatingGradientBackground>
       <div className='flex flex-col'>
         <div class="lg:basis-1/4 sm:basis-1/6 flex justify-end right-0 h-1/6 lg:pt-10 lg:pr-10 sm:pr-5 sm:pt-3 animate-slidein">
           <a href="https://github.com/kierankhan" className='pr-3' target="_blank" rel="noopener noreferrer">
@@ -29,10 +32,18 @@ function App() {
       </div>
       <div className='lg:pl-36 sm:pl-8'>
         <p className='text-slate-100 lg:text-2xl sm:text-xl lg:w-2/3 sm:w-11/12 animate-slidein'>
-          Hi I'm Kieran, a student at the University of Maryland studying CS and Statistics. I have a strong interest in  
-          anything data; big data, data engineering, data science, machine learning are all sub-fields that I'd love to explore.
-          Aside from school/career, I enjoy playing violin, traveling, cycling, and collecting records. Feel free to get in touch!
+          Hi I'm Kieran, a student at the University of Maryland studying CS and Statistics, and I have a strong interest in  
+          anything data! Aside from school/career, I enjoy playing violin, traveling, cycling, and collecting records. Feel free to get in touch!
         </p>
+      </div>
+      <div className='lg:pl-36 sm:pl-8'>
+        <div className='flex flex-wrap items-center mt-2'>
+          <img src="static/images/logos/Microsoft_logo_(2012).png" className='lg:h-12 sm:h-8 px-3 my-2'></img>
+          <img src="static/images/logos/The_Aerospace_Corporation_logo.png" className='lg:h-16 sm:h-8 px-3 mt-2'></img>
+          <img src="static/images/logos/Mitre_Corporation_logo.png" className='lg:h-10 sm:h-8 px-3 my-2'></img>
+          <img src="static/images/logos/U.S._News_&_World_Report_logo.png" className='lg:h-16 sm:h-8 px-3 my-2'></img>
+          
+        </div>
       </div>
 
       
@@ -56,7 +67,8 @@ function App() {
       </div>
         
       
-    </div>
+    {/* </div> */}
+    </RotatingGradientBackground>
   )
 }
 

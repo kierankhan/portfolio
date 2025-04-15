@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import typography from '@tailwindcss/typography';
+
 export default {
   content: [
     "./index.html",
@@ -20,11 +22,9 @@ export default {
             transform: "translateY(0)",
           },
         },
-        shiftbg: {
+        gradient: {
           '0%': { backgroundPosition: '0% 50%' },
-          '25%': { backgroundPosition: '50% 0%' },
           '50%': { backgroundPosition: '100% 50%' },
-          '70%': { backgroundPosition: '50% 25%' },
           '100%': { backgroundPosition: '0% 50%' },
         },
       },
@@ -34,7 +34,10 @@ export default {
         slidein300: "slidein 1s ease 300ms",
         slidein500: "slidein 1s ease 500ms",
         slidein700: "slidein 1s ease 700ms",
-        shiftbbg: "shiftbg 20s ease infinite"
+        gradient: "gradient 15s ease infinite"
+      },
+      backgroundImage: {
+        'shifting-gradient': 'linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)',
       },
     },
     screens: {
@@ -43,6 +46,6 @@ export default {
     }
   },
   plugins: [
-    require('@tailwindcss/typography')
+    typography
   ],
 }

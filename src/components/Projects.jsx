@@ -6,7 +6,46 @@ const Projects = () => {
     <div>
         <div className="flex items-center justify-center">
           <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-16 content-start px-5">
-          <Card 
+            <Card 
+              title="Sound Sift" 
+              desc="Music producers often sift through hundreds of samples to find the perfect sound. With SoundSift, producers can use text or audio to quickly find samples that directly fit their mix."
+              desc2="SoundSift references your entire sample library, and users can find sample by either uploading a clip of their song or searching by text. E.g. searching `sad guitar melody` would return samples that most closely matched your query. 
+              We used two [__vector embedding models__](https://huggingface.co/laion/clap-htsat-fused) from HuggingFace that use a technology called CLAP: Contrastive Language-Audio Pretraining. One is audio-to-audio and one is text-to-audio. We were able to create an API using these models and performed a FAISS similarity 
+              search to search for the top samples in the user's sample library. The frontend was built in Svelte as an Electron desktop app.
+              "
+              src="static/images/soundsift2.png"
+              ghLink="https://github.com/kierankhan/sound-search"
+              tech="Electron, Svelte, Embeddings, FAISS, FastAPI, Node.js, Python, Google Cloud, Typescript, Transformers"
+              learnMore="https://devpost.com/software/soundsift-tu3x76"
+            />
+            <Card 
+              title="Control Flow" 
+              desc="A roguelike coding puzzle game where you craft solutions with draggable code blocks. Buy custom code blocks, overcome challenges, and master programming concepts in a procedurally generated adventure!"
+              desc2="This was our project for Bitcamp 2025! The biggest challenge was building the evaluator. We basically invented our own interpreted programming language that gets executed as javascript. We dealt with challenges having to do with scope, variables, (nested) loops, etc..
+              Creating our custom code block editor was also a huge challenge, as it was built completely from scratch with only the p5js core library. We ran into big problems with how to represent nesting and headers, and how to customize the arguments to loops and conditionals. We are beyond proud of how well it turn out.
+              "
+              src="static/images/controlflow.png"
+              link="https://ericx1e.github.io/ControlFlow/"
+              ghLink="https://github.com/ericx1e/ControlFlow"
+              tech="p5.js, Javascript, HTML"
+              learnMore="https://devpost.com/software/control-flow-v415xl"
+            />
+            <Card 
+              title="Cutting Corners" 
+              desc="A telephone-esque multiplayer drawing game where you and 3 friends must work together to convince an AI Image Classifier of your artistic abilities!"
+              desc2="We wanted to create a game that matched the vibe of our favorite co-op multiplayer games, 
+              like [Gartic Phone](https://garticphone.com/) and [Jackbox](https://www.jackboxgames.com/) but 
+              with a technical twist. We utilized [__Google QuickDraw open sourced dataset__](https://github.com/googlecreativelab/quickdraw-dataset)
+              to train an AI Image classifier. To power the classifier, we used pytorch to replicate a cutting-edge CNN architecture for image classification, Alexnet. We trained the network on 25000 data points from 25 different classes, and consistently achieved 80-90% test accuracy.
+              To have the frontend be able to utilize our model, we decided to use FastAPI to build a Restful API that is able to take in base64, a string representation of the user-drawn image, and manipulate it in order to compress it down into a 28x28 grayscale matrix that our model needs as input, hosted by [__Railway__](https://railway.app/). 
+              "
+              src="static/images/cuttingcorners.png"
+              link="https://cuttingcorners-7c95b20a5ad9.herokuapp.com/"
+              ghLink="https://github.com/ericx1e/Cutting-Corners"
+              tech="p5.js, express.js, pytorch, fastapi, pandas, PIL, pydantic, socket.io"
+              learnMore="https://devpost.com/software/cuttingcorners"
+            />
+            <Card 
               title="TestudoAI 🐢🔗" 
               desc="TestudoAI is an AutoGPT app that helps UMD students chooses courses, professors, and sections."
               desc2="Built in Python with [__LangChain__](https://python.langchain.com/docs/get_started/introduction.html), 
@@ -23,21 +62,6 @@ const Projects = () => {
               ghLink="https://github.com/kierankhan/TestudoAI"
               tech="LangChain, Python, OpenAI, LangSmith, Streamlit, Matplotlib, FAISS, Embeddings, Vector Stores, REST APIs"
               learnMore="https://github.com/kierankhan/TestudoAI"
-            />
-            <Card 
-              title="Cutting Corners" 
-              desc="A telephone-esque multiplayer drawing game where you and 3 friends must work together to convince an AI Image Classifier of your artistic abilities!"
-              desc2="We wanted to create a game that matched the vibe of our favorite co-op multiplayer games, 
-              like [Gartic Phone](https://garticphone.com/) and [Jackbox](https://www.jackboxgames.com/) but 
-              with a technical twist. We utilized [__Google QuickDraw open sourced dataset__](https://github.com/googlecreativelab/quickdraw-dataset)
-              to train an AI Image classifier. To power the classifier, we used pytorch to replicate a cutting-edge CNN architecture for image classification, Alexnet. We trained the network on 25000 data points from 25 different classes, and consistently achieved 80-90% test accuracy.
-              To have the frontend be able to utilize our model, we decided to use FastAPI to build a Restful API that is able to take in base64, a string representation of the user-drawn image, and manipulate it in order to compress it down into a 28x28 grayscale matrix that our model needs as input, hosted by [__Railway__](https://railway.app/). 
-              "
-              src="static/images/cuttingcorners.png"
-              link="https://cuttingcorners-7c95b20a5ad9.herokuapp.com/"
-              ghLink="https://github.com/ericx1e/Cutting-Corners"
-              tech="p5.js, express.js, pytorch, fastapi, pandas, PIL, pydantic, socket.io"
-              learnMore="https://devpost.com/software/cuttingcorners"
             />
             <Card 
               title="WillHeSave" 
@@ -88,7 +112,7 @@ const Projects = () => {
               tech="React, Javascript, Firebase Bulma, HTML/CSS"
               learnMore="https://devpost.com/software/studybrew"
             />
-            <Card 
+            {/* <Card 
               title="Diamondback Innovators 🐢💎" 
               desc="The website for Diamondback Innovators, UMD's first student-run engineering consulting club."
               desc2="Diamondback Innovators advance the skills they are taught at the University. With guest speakers from some of 
@@ -116,7 +140,7 @@ const Projects = () => {
               ghLink="https://github.com/kierankhan/Poker-Equity-Calculator-API"
               tech="Java, Spring Boot, REST APIs"
               learnMore=""
-            />
+            /> */}
           </div>
         </div>
     </div>
